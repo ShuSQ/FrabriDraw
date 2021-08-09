@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">       
+    <style type="text/css">
+        .icon {
+           width: 2em; height: 2em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="btn-group">
+    <button class="actBtn" type="button" value="start drawing" onclick="onStartDrawing();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-pen-tool-vector"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="cursor" onclick="onCursor();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-cursor"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="text" onclick="onText();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-text"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="solid circle" onclick="onSolidCircle();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-circle"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="solid rect" onclick="onSolidRect();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-rectangle"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="zoom in" onclick="onZoomIn();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-zoomplus"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="zoom out" onclick="onZoomOut();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-zoomminus"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="reset zoom" onclick="onResetZoom();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-target"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="delete" onclick="deleteObj();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-eraser"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="group" onclick="onGroup();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-group"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="ungroup" onclick="unGroup();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-ungroup"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="copy" onclick="copy();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-copy"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="paste" onclick="paste();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-substract"></use></svg>
+    </button>
+
+
+    <button class="actBtn" type="button" value="undo" onclick="undo();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-undo"></use></svg>
+    </button>
+
+    <button class="actBtn" type="button" value="redo" onclick="redo();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-redo"></use></svg>
+    </button>
+
+    <button id="distanceInput" class="actBtn" type="button" value="drawgrid" onclick="drawGrid();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-layout-grid"></use></svg>
+    </button>
+
+    <div class="file-input">
+        <input id="uploadImg" class="fileInput" type="file" value="ungroup">
+        <label for="file">
+            <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-image"></use></svg>
+        </label>
+    </div>
+
+    <button class="actBtn" type="button" value="exportcanvas" onclick="exportCanvas();">
+        <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-download"></use></svg>
+    </button>
+
+
+
+
+
+    <div id="snackbar">success</div>
+
+    <canvas id="canvas"></canvas>
+
+<script src="hotkeys.js"></script>
+
+ <script src="./js/fabric.js"></script>
+ <script src="main.js"></script>   
+
+
+ <script src="https://at.alicdn.com/t/font_2453145_2uxyah4u3i9.js"></script>
+</body>
+</html>
