@@ -24,7 +24,7 @@ yarn add lite-server --dev # or yarn
   },
 ```
 
-4.在VScode中运行lite-server，http://127.0.0.1:5500/index.html查看项目。
+4.在VScode中运行lite-server，http://127.0.0.1:5500/index.html 查看项目。
 
 
 
@@ -110,5 +110,5 @@ Fabric.js是一个非常好的js库，让使用者可以通过canvas来实现很
 
 一键导出PNG预览：
 
-![](https://cdn-images-1.medium.com/max/600/1*su7EWsD9tZ4GkmsTAKiHpw.png)
+![](https://cdn-images-1.medium.com/max/1000/1*su7EWsD9tZ4GkmsTAKiHpw.png)
 
